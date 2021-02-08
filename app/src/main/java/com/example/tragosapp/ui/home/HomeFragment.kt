@@ -43,6 +43,9 @@ class HomeFragment : Fragment() {
 
         var tragos = mutableListOf<Trago>()
         tragos.add(trago)
+
+        trago = Trago("Paloma",50f, "https://www.cantinerokentubano.com/wp-content/uploads/2018/08/paloma.jpg")
+        tragos.add(trago)
         return tragos
     }
 }
