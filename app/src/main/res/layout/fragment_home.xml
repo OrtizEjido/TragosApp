@@ -6,13 +6,23 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvTragos"
+    <include layout="@layout/item_trago_ingredientes"
+        android:id="@+id/container"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:listitem="@layout/item_trago"
         />
+
+    <Button
+        android:id="@+id/btnOtra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dame otra recomendación"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/container" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
